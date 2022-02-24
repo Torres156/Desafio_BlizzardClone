@@ -11,20 +11,23 @@ ul{
     list-style: none;
 }
 
-body{
-    background-color: #171717;
-    background: url(https://images.blz-contentstack.com/v3/assets/blta8f9a8e092360c6c/bltabdbd165a4170e4e/61e765a22e36303b7009a372/960_Featured_Games.jpg?auto=webp);
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
+
 
 main
 {
     width: 100%;
 }
 
+.main-container{
+    background-color: #171717;
+    background: url(https://images.blz-contentstack.com/v3/assets/blta8f9a8e092360c6c/bltabdbd165a4170e4e/61e765a22e36303b7009a372/960_Featured_Games.jpg?auto=webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .5);
+}
+
 /* :: NAVBAR SECTION :: */
-main > .navbar{
+.main-container > .navbar{
     display:flex;
     height: 60px;
     width: 100%;
@@ -38,18 +41,18 @@ main > .navbar{
     white-space: nowrap;
 }
 
-main > .navbar a{
+.main-container > .navbar a{
     height: 60px;
     color: white;
     opacity: .8;   
     transition: opacity 200ms;  
 }
 
-main > .navbar a:hover{
+.main-container > .navbar a:hover{
     opacity: 1;
 }
 
-main > .navbar .navbar-logo{
+.main-container > .navbar .navbar-logo{
     width: 66px;
     background: url("../assets/blizzard-logo.png");
     background-size: 90px;
@@ -59,21 +62,21 @@ main > .navbar .navbar-logo{
     padding: 0;  
     transition: opacity 200ms;    
 }
-main > .navbar .navbar-items
+.main-container > .navbar .navbar-items
 {
     display: flex;
     margin-left: 30px;        
 }
 
-main > .navbar .navbar-items a{
+.main-container > .navbar .navbar-items a{
     margin-left: 25px;
 }
 
-main > .navbar .navbar-items a:first-child{
+.main-container > .navbar .navbar-items a:first-child{
     margin-left: 0px;
 }
 
-main > .navbar .navbar-items .navbar-item{    
+.main-container > .navbar .navbar-items .navbar-item{    
     display: flex;    
     opacity: .8 ;
     height: 100%;
@@ -81,20 +84,20 @@ main > .navbar .navbar-items .navbar-item{
     text-align: center;    
 }
 
-main > .navbar .navbar-items-right{
+.main-container > .navbar .navbar-items-right{
     margin-left: auto;    
     font-size: 17px;
 }
 
 /* :: PRESENTATION SECTION :: */
-main > .presentation
+.main-container > .presentation
 {
     width: 100%;
     height: 720px;    
     z-index: -1;      
 }
 
-main > .presentation > .presentation-container{    
+.main-container > .presentation > .presentation-container{    
     display: block;
     width: 90%;
     height: 100%;
@@ -142,7 +145,7 @@ main > .presentation > .presentation-container{
     margin-top: 10px;
 }
 
-.presentation-content> .content-button {
+.content-button {
     width: 173px;
     height: 72px;    
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -151,7 +154,7 @@ main > .presentation > .presentation-container{
     color: white;    
 }
 
-.presentation-content> .content-button div{
+ .content-button div{
     background: #2C9FFE;
     width: 173px;
     height: 72px;    
@@ -163,7 +166,7 @@ main > .presentation > .presentation-container{
     margin-top: 25px;
 }
 
-.presentation-content > .content-button div:hover{
+.content-button div:hover{
     background: #59B3FD;
 }
 
@@ -196,10 +199,11 @@ main > .presentation > .presentation-container{
 }
 
 /* :: Games Section :: */
-main > .games-section{
+.main-container > .games-section{
     padding-top: 40px;
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 100px;
 }
 
 .games-section > .games-header{
@@ -252,8 +256,7 @@ main > .games-section{
 
 .game-container > .game-img{
     float: left;
-    background-image: url(https://images.blz-contentstack.com/v3/assets/blta8f9a8e092360c6c/blt71e1f3ec632b3fe3/61a5156d43af6d102dc88ace/d2.jpg?auto=webp);
-    background-size: cover;
+     background-size: cover;
     width: 258px;
     height: 344px;
     transition: width .2s, height .2s, margin-top .2s, margin-left .2s;
@@ -272,8 +275,7 @@ main > .games-section{
     position: absolute;
     top: 354px;
     color: white;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;    
 }
 .game-infos > h2{
     font-size: 20px;
@@ -289,3 +291,104 @@ main > .games-section{
     color:gray;
     margin-right: 5px;
 }
+
+.game-coming{
+    width: 194px !important;
+    height: 307px !important;
+}
+
+.game-coming > .game-img{
+    width: 194px !important;
+    height: 194px !important;
+}
+.game-coming > .game-img:hover{
+    width: 204px !important;
+    height: 204px !important;
+}
+
+.game-coming > .game-infos{
+    top:204px !important;
+}
+.game-infos > div{
+    margin-top: 4px;
+}
+
+/* :: BattleNet Section :: */
+
+.battlenet-section{
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 160px;
+    padding-right: 160px;
+    background-color: #27333D;
+    position: absolute;
+    z-index: -1;
+}
+.battlenet-section > .battlenet-container{
+    width: 100%;
+    height: 640px;
+    background: url(https://images.blz-contentstack.com/v3/assets/blta8f9a8e092360c6c/bltb1b55d28d4835ac9/620171bfa6bb9250d3e44a63/Bnet_Card-06.6.jpg?auto=webp);
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .5);
+    padding: 100px;
+    padding-top: 180px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    color: white;
+    position: relative;
+}
+
+.battlenet-container > .battlenet-logo{    
+    background: url(https://images.blz-contentstack.com/v3/assets/blta8f9a8e092360c6c/blt4b84a48f5e927fe1/6206b6126d53b1303d8afbdb/Bnet_Logo.png?auto=webp);
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    width: 329px;
+    height: 105px;    
+}
+
+.battlenet-container > h1{
+    font-size: 50px;
+}
+
+.battlenet-container > h2{
+    font-size: 20px;
+    color: gray;
+    margin-top: 20px;
+}
+
+.battlenet-container .content-button:nth-child(2) div
+{
+    margin-left: 10px;
+    background: #273A4A;
+    border: 2px solid gray
+}
+.battlenet-container .content-button:nth-child(2) div:hover{
+    background: #375064;
+}
+
+@media screen and (max-width: 1024px)
+{
+    .battlenet-section{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .battlenet-section > .battlenet-container{
+        background: url(https://images.blz-contentstack.com/v3/assets/blta8f9a8e092360c6c/blt764c5b7fc6a4146b/620167e3f2c2644f956a8312/Mobile_Bnet_Card-02.2.jpg?auto=webp);
+        margin: auto;
+        padding-left: 20px;     
+        padding-right: 20px;
+    }
+
+    .battlenet-container div{
+        margin: auto ;        
+    }
+
+    .battlenet-container h1, .battlenet-container h2{
+        text-align: center;
+    }
+}
+
+
