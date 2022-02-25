@@ -322,7 +322,6 @@ main
     padding-left: 160px;
     padding-right: 160px;
     background-color: #27333D;
-    position: absolute;
     z-index: -1;
 }
 .battlenet-section > .battlenet-container{
@@ -391,4 +390,125 @@ main
     }
 }
 
+/* :: Footer :: */
+.footer-section{
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 30px;
+    background: #161616;
+    width: 100%;
+    box-sizing: border-box;
+    justify-items: center;
+    align-items: center;
+    color: white;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    flex-direction: column;  
+}
 
+.footer-section > .footer-lang{
+    display: flex; 
+    margin: auto;   
+    cursor: pointer;
+    opacity: .6;    
+}
+
+.footer-section > .footer-lang:hover{
+    opacity: 1;
+}
+
+.footer-lang svg:first-child{
+    color: #2C9FFE;
+    margin-top: -2px;
+    margin-right: 4px;
+}
+
+.footer-lang svg:last-child{
+    margin-top: 4px;    
+}
+
+.footer-section > .footer-logo{
+    display: flex; 
+    margin: auto;   
+    cursor: pointer;
+    opacity: .6; 
+    margin-top: 40px;      
+}
+
+.footer-section > .footer-logo:hover{
+    opacity: 1;
+}
+
+.footer-links{
+    color: gray;
+    display: flex;
+    margin-top: 45px;
+    gap: 8px;
+    font-size: 10px;
+}
+
+.footer-links > a{
+    color: white;
+    opacity: .6;
+    font-size: 16px;
+    margin-top: -5px;
+}
+
+.footer-links > a:hover{
+    opacity: 1;
+}
+
+.footer-section > .footer-app{
+    color: rgb(180, 180, 180);
+    display: flex;
+    gap: 4px;
+    margin-top: 40px;
+}
+
+.footer-app > a{
+    color: #128DEE;
+}
+
+.footer-app > a:hover{
+    color: #62B8FB;
+}
+
+.footer-section > .footer-company{
+    color: rgb(180, 180, 180);
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    text-align: center;    
+    margin-top: 40px;
+}
+
+.footer-company a{
+    color: rgb(220, 220, 220);
+}
+
+.footer-company a:hover{
+    color: white;
+}
+
+.footer-company > .footer-links{
+    font-size: 10px;    
+    margin: auto;
+    margin-top: 6px;
+}
+
+.footer-company > .footer-links a{    
+    font-size: 13px;    
+    margin-top: -2px;
+    color: rgb(200, 200, 200);
+    opacity: 1;
+}
+
+.footer-company > .footer-links a:hover{    
+    color: white;
+}
+
+.footer-section > .footer-public{
+    display: flex;
+    margin-top: 30px;
+}
