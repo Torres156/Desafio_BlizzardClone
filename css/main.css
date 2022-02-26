@@ -255,20 +255,16 @@ main
 }
 
 .game-container > .game-img{
-    float: left;
-     background-size: cover;
+    background-size: cover;
     width: 258px;
     height: 344px;
-    transition: width .2s, height .2s, margin-top .2s, margin-left .2s;
+    transition: transform .2s;
     border-radius: 8px;
     cursor: pointer;
     z-index: 2;
 }
 .game-container > .game-img:hover{
-    width: 268px;
-    height: 354px;
-    margin-top: -5px;
-    margin-left: -5px;
+    transform: scale(1.05);
 }
 
 .game-container > .game-infos{
@@ -300,10 +296,6 @@ main
 .game-coming > .game-img{
     width: 194px !important;
     height: 194px !important;
-}
-.game-coming > .game-img:hover{
-    width: 204px !important;
-    height: 204px !important;
 }
 
 .game-coming > .game-infos{
